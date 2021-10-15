@@ -21,6 +21,7 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>security</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

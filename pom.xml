@@ -11,19 +11,23 @@
         <module>security</module>
     </modules>
 
+    <properties>
+        <guice.version>4.2.2</guice.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>security</artifactId>
-                <version>${project.version}</version>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice</artifactId>
+                <version>${guice.version}</version>
+                <classifier>no_aop</classifier>
             </dependency>
-
             <dependency>
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
-                <version>4.2.2</version>
-                <classifier>no_aop</classifier>
+                <version>${guice.version}</version>
+                <classifier>classes</classifier>
             </dependency>
         </dependencies>
     </dependencyManagement>
